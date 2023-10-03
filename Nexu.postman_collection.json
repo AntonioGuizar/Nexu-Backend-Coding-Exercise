@@ -1,0 +1,403 @@
+{
+	"info": {
+		"_postman_id": "01a63d21-d349-430a-91a5-686db75d9962",
+		"name": "Nexu",
+		"description": "Nexu Backend Coding Exercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4979939"
+	},
+	"item": [
+		{
+			"name": "https//nexu.exti.mx/API/brands/2/models",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "brand_name",
+							"value": "Testing223",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nexu/API/brands/2/models",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nexu",
+						"API",
+						"brands",
+						"2",
+						"models"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https//nexu.exti.mx/API/brands",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "brand_name",
+							"value": "Testing223",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nexu/API/brands",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nexu",
+						"API",
+						"brands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https//nexu.exti.mx/API/brands/2/models",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model_name",
+							"value": "Testing21",
+							"type": "text"
+						},
+						{
+							"key": "average_price",
+							"value": "12300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nexu/API/brands/2/models",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nexu",
+						"API",
+						"brands",
+						"2",
+						"models"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https//nexu.exti.mx/API/models/1?average_price=130000",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model_name",
+							"value": "Testing21",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "average_price",
+							"value": "12300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nexu/API/models/1?average_price=130000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nexu",
+						"API",
+						"models",
+						"1"
+					],
+					"query": [
+						{
+							"key": "average_price",
+							"value": "130000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https//nexu.exti.mx/API/models?lower=400000",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model_name",
+							"value": "Testing21",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "average_price",
+							"value": "12300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nexu/API/models?lower=400000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nexu",
+						"API",
+						"models"
+					],
+					"query": [
+						{
+							"key": "greater",
+							"value": "380000",
+							"disabled": true
+						},
+						{
+							"key": "lower",
+							"value": "400000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https//nexu.exti.mx/API/models?greater=380000&lower=400000",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model_name",
+							"value": "Testing21",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "average_price",
+							"value": "12300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nexu/API/models?greater=380000&lower=400000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nexu",
+						"API",
+						"models"
+					],
+					"query": [
+						{
+							"key": "greater",
+							"value": "380000"
+						},
+						{
+							"key": "lower",
+							"value": "400000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https//nexu.exti.mx/API/models?greater=400000",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model_name",
+							"value": "Testing21",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "average_price",
+							"value": "12300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nexu/API/models?greater=400000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nexu",
+						"API",
+						"models"
+					],
+					"query": [
+						{
+							"key": "greater",
+							"value": "380000",
+							"disabled": true
+						},
+						{
+							"key": "greater",
+							"value": "400000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https//nexu.exti.mx/API/models/3?average_price=130000",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model_name",
+							"value": "Testing21",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "average_price",
+							"value": "12300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nexu/API/models/3?average_price=130000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nexu",
+						"API",
+						"models",
+						"3"
+					],
+					"query": [
+						{
+							"key": "average_price",
+							"value": "130000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https//nexu.exti.mx/API/brands",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/nexu/API/brands",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nexu",
+						"API",
+						"brands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https//nexu.exti.mx/API/brands/2/models",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "brand_name",
+							"value": "Testing223",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nexu/API/brands/2/models",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nexu",
+						"API",
+						"brands",
+						"2",
+						"models"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
