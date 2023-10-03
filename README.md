@@ -90,7 +90,7 @@ This endpoint retrieves models within a specified price range. You can include t
 
 Feel free to use these routes and parameters to interact with the API and perform various operations related to brands and models.
 
-This project was deployed in nexu.exti.mx
+This project was deployed in https://nexu.exti.mx/API
 
 You can test it using the next endpoints collection in postman
 https://api.postman.com/collections/4979939-01a63d21-d349-430a-91a5-686db75d9962?access_key=PMAT-01HBSY3MTNPVBNHPCSGJ6Z60NP
