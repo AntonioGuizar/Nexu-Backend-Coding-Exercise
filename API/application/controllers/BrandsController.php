@@ -34,7 +34,7 @@ class BrandsController extends CI_Controller {
         }
         
         http_response_code(200);
-        echo print_r(json_encode($brands, JSON_PRETTY_PRINT));
+        echo json_encode($brands, JSON_PRETTY_PRINT);
     }
 
     // Create a new brand in the 'brands' table
@@ -84,6 +84,6 @@ class BrandsController extends CI_Controller {
         }
         
         http_response_code(200);
-        echo print_r(json_encode($models, JSON_PRETTY_PRINT));
+        echo json_encode($models, JSON_PRETTY_PRINT);
     }
 }

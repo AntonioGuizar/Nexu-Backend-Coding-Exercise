@@ -37,7 +37,7 @@ class ModelsController extends CI_Controller {
         }
 
         http_response_code(200);
-        echo print_r(json_encode($models, JSON_PRETTY_PRINT));
+        echo json_encode($models, JSON_PRETTY_PRINT);
     }
 
     public function create($brand_id)

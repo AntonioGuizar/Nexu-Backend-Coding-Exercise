@@ -122,39 +122,39 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<h3>Example 1: Retrieve a List of Brands</h3>
 	<p><strong>GET /brands</strong></p>
 	<p>This endpoint retrieves a list of all brands with their models average_price</p>
-	<code>GET https://nexu.exti.mx/API/brands</code>
+	<code>GET <?php echo base_url(); ?>API/brands</code>
 
 	<h3>Example 2: Retrieve Models for a Specific Brand</h3>
 	<p><strong>GET /brands/:id/models</strong></p>
 	<p>This endpoint retrieves models for a specific brand by providing the <code>:id</code> of the brand.</p>
-	<code>GET https://nexu.exti.mx/API/brands/1/models</code>
+	<code>GET <?php echo base_url(); ?>API/brands/1/models</code>
 
 	<h3>Example 3: Create a New Brand</h3>
 	<p><strong>POST /brands</strong></p>
 	<p>This endpoint allows you to create a new brand. You need to include the brand name in the request body. (use POST or form-data)</p>
-	<code>POST https://nexu.exti.mx/API/brands</code>
+	<code>POST <?php echo base_url(); ?>API/brands</code>
 	<code>"brand_name": "Toyota"</code>
 
 	<h3>Example 4: Create a New Model for a Brand</h3>
 	<p><strong>POST /brands/:id/models</strong></p>
 	<p>This endpoint allows you to create a new model for a specific brand. You need to provide the brand ID in the URL and include the model name and optional average price in the request body. (use POST or form-data)</p>
-	<code>POST https://nexu.exti.mx/API/brands/1/models</code>
+	<code>POST <?php echo base_url(); ?>API/brands/1/models</code>
 	<code>"model_name": "Camry",
 	"average_price": 280000</code>
 
 	<h3>Example 5: Update Model Information</h3>
 	<p><strong>PUT /models/:id</strong></p>
 	<p>This endpoint allows you to update the information for a specific model by providing the model ID. You need to include the updated average price in the request body. (use GET format ?average_price=125000)</p>
-	<code>PUT https://nexu.exti.mx/API/models/1?average_price=125000</code>
+	<code>PUT <?php echo base_url(); ?>API/models/1?average_price=125000</code>
 
 	<h3>Example 6: Retrieve Models with Price Range</h3>
 	<p><strong>GET /models</strong></p>
 	<p>This endpoint retrieves models within a specified price range. You can include the optional parameters <code>greater</code> and <code>lower</code> in the query string to filter models.</p>
-	<code>GET https://nexu.exti.mx/API/models?greater=250000&lower=350000</code>
+	<code>GET <?php echo base_url(); ?>API/models?greater=250000&lower=350000</code>
 
 	<p>Feel free to use these routes and parameters to interact with the API and perform various operations related to brands and models.</p>
 
-	<p>This project was deployed in <a href="https://nexu.exti.mx/API">nexu.exti.mx/API</a></p>
+	<p>This project was deployed in <a href="<?php echo base_url(); ?>API">nexu.exti.mx/API</a></p>
 
 	<p>You can test it using the next endpoints collection in postman <a href="https://api.postman.com/collections/4979939-01a63d21-d349-430a-91a5-686db75d9962?access_key=PMAT-01HBSY3MTNPVBNHPCSGJ6Z60NP">here</a></p>
 </body>
